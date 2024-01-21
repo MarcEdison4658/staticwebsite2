@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Design 2.0</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js"></script>
+    <link rel="shortcut icon" href="./tiktokfavicon.png" type="image/png">
+</head>
+
+<body class="flex m0 fjc-center" >
+  
+    <div class="b flex f-column m-top50">
+        <div class="b flex fjc-center bg-c-grey"
+            style="height:60px">
+            <img class="logo" src="./pngaaa.com-1524503.png" />
+            <span class="name">Marc's Website</span>
+        </div>
+        <div class="b flex main">
+            <div class="b flex f-column sidebar ">       
+                <div class="b text-sidebar manu" onclick="showService(1)">Main<br>主菜单</div>
+                <div class="b text-sidebar manu" onclick="showService(2)">Webpage</div>
+                <div class="b  text-sidebar manu" onclick="showService(3)">IT Support</div>
+                <div class="b text-sidebar manu" onclick="showService(4)">SysAdmin</div>
+                <div class="b text-sidebar manu" onclick="showService(5)">PenTest</div>
+                <div class="b text-sidebar manu" onclick="showService(6)">Soc Med Marketing</div>
+            </div>
+
+            <div id="content1" class="b flex f-column content">
+                <div class="b flex manu" >
+                    <div  class="b m-item text" 
+                         onclick="showContent(1)"
+                         onmouseenter="style='background-color:lightsalmon'"
+                         onmouseleave="style='background-color:none'">About</div>
+                    <div   class="b m-item m-lr5 text" 
+                         onclick="showContent(2)"
+                         onmouseenter="style='background-color:lightsalmon'"
+                         onmouseleave="style='background-color:none'">Work</div>
+                    <!-- tell brower to invoke the function ShowContent when user clike the work Div-->
+                    <div  class="b m-item m-lr5 text"
+                         onclick="showContent(3)"
+                         onmouseenter="style='background-color:lightsalmon'"
+                         onmouseleave="style='background-color:none'">Education</div>
+                    <div  class="b m-item m-lr5 text"
+                         onclick="showContent(4)"
+                         onmouseenter="style='background-color:lightsalmon'"
+                         onmouseleave="style='background-color:none'">Training</div>
+                    <div  class="b m-item m-lr5" 
+                         onclick="showContent(5)"
+                         onmouseenter="style='background-color:lightsalmon'"
+                         onmouseleave="style='background-color:none'"><b>Skills</b></div>
+                    <div  class="b m-item text" 
+                        onclick="showContent(6)"
+                         onmouseenter="style='background-color:lightsalmon'"
+                         onmouseleave="style='background-color:none'">Blog</div>
+                </div>
+                <div id="contentPanel" class="b content-panel">Press any buttons to start.<br>按任意按钮开始。</div>
+            </div>
+
+            <div id="content2" class="b flex f-column content">
+                <div class="b flex manu" >
+                    <div  class="b m-item text" 
+                         onclick="showContent(1)"
+                         onmouseenter="style='background-color:lightsalmon'"
+                         onmouseleave="style='background-color:none'">Portfolio</div>
+                    <div   class="b m-item text m-lr5" 
+                         onclick="showContent(2)"
+                         onmouseenter="style='background-color:lightsalmon'"
+                         onmouseleave="style='background-color:none'">Restaurant</div>
+                    <!-- tell brower to invoke the function ShowContent when user clike the work Div-->
+                    <div  class="b m-item text m-lr5" 
+                         onclick="showContent(3)"
+                         onmouseenter="style='background-color:lightsalmon'"
+                         onmouseleave="style='background-color:none'">ECommerce</div>
+                    <div  class="b m-item text m-lr5"
+                         onclick="showContent(4)"
+                         onmouseenter="style='background-color:lightsalmon'"
+                         onmouseleave="style='background-color:none'">Consultant</div>
+                    <div  class="b m-item text"
+                          onclick="showContent(5)"
+                          onmouseenter="style='background-color:lightsalmon'"
+                          onmouseleave="style='background-color:none'">Blog</div>
+                </div>
+                <div  class="b content-panel m-lr5">Let me customize your webpage based on your preference.<br>让我根据您的喜好定制您的网页。</div>
+            </div>
+
+            <div id="content3" class="b flex f-column content">
+                <div class="b flex manu">
+                    <div class="b m-item text m-lr5"
+                    onclick="showContent(1)"
+                    onmouseenter="style='background-color:lightsalmon'"
+                    onmouseleave="style='background-color:none'">Hardwares</div>
+                    <div class="b m-item text m-lr5"
+                    onclick="showContent(2)"
+                    onmouseenter="style='background-color:lightsalmon'"
+                    onmouseleave="style='background-color:none'">Softwares</div>
+                    <div class="b m-item text m-lr5"
+                    onclick="showContent(3)"
+                    onmouseenter="style='background-color:lightsalmon'"
+                    onmouseleave="style='background-color:none'">Networks</div>
+                    <div class="b m-item text m-lr5"
+                    onclick="showContent(4)"
+                    onmouseenter="style='background-color:lightsalmon'"
+                    onmouseleave="style='background-color:none'">Systems</div>
+                </div>
+                <div  class="b content-panel">I am your freelance Technical Support guy. Let me help you.<br>我是您的自由技术支持人员。我来帮你。</div>
+            </div>
+
+            <div id="content4" class="b flex f-column content" >
+                <div class="b flex manu text m-lr5">
+                    <div class="b m-item text m-lr5"
+                    onclick="showContent(1)"
+                    onmouseenter="style='background-color:lightsalmon'"
+                    onmouseleave="style='background-color:none'">Kali</div>
+                    <div class="b m-item text m-lr5"
+                    onclick="showContent(2)"
+                    onmouseenter="style='background-color:lightsalmon'"
+                    onmouseleave="style='background-color:none'">Ubuntu</div>
+                    <div class="b m-item text m-lr5"
+                    onclick="showContent(3)"
+                    onmouseenter="style='background-color:lightsalmon'"
+                    onmouseleave="style='background-color:none'">Windows</div>
+                </div>
+                <div  class="b content-panel">Let me help you troubleshoot your computer servers.<br>让我帮助您排除计算机服务器的故障。</div>
+            </div>
+
+            <div  id="content5" class="b flex f-column content">
+                <div class="b flex manu text m-lr5">
+                    <div class="b m-item text m-lr5"
+                    onclick="showContent(1)"
+                    onmouseenter="style='background-color:lightsalmon'"
+                    onmouseleave="style='background-color:none'">Ethical Hacking</div>
+                    <div class="b m-item text m-lr5"
+                    onclick="showContent(2)"
+                    onmouseenter="style='background-color:lightsalmon'"
+                    onmouseleave="style='background-color:none'">Cyber Security</div>
+                </div>
+                <div  class="b content-panel">Let me help you secure and protect your computers and networks.<br>让我帮助您保护您的计算机和网络。</div>
+            </div>
+
+            <div id="content6" class="b flex f-column content">
+                <div class="b flex manu" >
+                    <div  class="b m-item text" 
+                         onclick="showContent(1)"
+                         onmouseenter="style='background-color:lightsalmon'"
+                         onmouseleave="style='background-color:none'">Facebook</div>
+                    <div   class="b m-item text m-lr5" 
+                         onclick="showContent(2)"
+                         onmouseenter="style='background-color:lightsalmon'"
+                         onmouseleave="style='background-color:none'">Instagram</div>
+                    <!-- tell brower to invoke the function ShowContent when user clike the work Div-->
+                    <div  class="b m-item text m-lr5" 
+                         onclick="showContent(3)"
+                         onmouseenter="style='background-color:lightsalmon'"
+                         onmouseleave="style='background-color:none'">Youtube</div>
+                    <div  class="b m-item text m-lr5"
+                         onclick="showContent(4)"
+                         onmouseenter="style='background-color:lightsalmon'"
+                         onmouseleave="style='background-color:none'">Tiktok</div>
+                    <div  class="b m-item text m-lr5"
+                          onclick="showContent(5)"
+                          onmouseenter="style='background-color:lightsalmon'"
+                          onmouseleave="style='background-color:none'">Gmail</div>
+                          <div  class="b m-item text"
+                          onclick="showContent(6)"
+                          onmouseenter="style='background-color:lightsalmon'"
+                          onmouseleave="style='background-color:none'">X</div>
+                </div>
+                <div  class="b content-panel m-lr5">Let me help you promote your products, services and brands using your favorite social media platforms and connect with the audience.<br>让我帮助您使用您最喜欢的社交媒体平台推广您的产品、服务和品牌，并与受众建立联系。</div>
+            </div>
+
+
+       </div>
+        </div>
+    </div>
+</body>
+
+</html> 
